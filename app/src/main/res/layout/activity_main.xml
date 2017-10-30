@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.mihisa.sensors.MainActivity">
+
+    <GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="2"
+    android:background="@color/greyColor"
+    android:layout_margin="6dp"
+    >
+
+    <ImageButton
+        android:id="@+id/info"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_margin="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickInfo"
+        android:src="@drawable/android_icon"
+        android:text="Info"
+        android:background="@color/whiteColor"
+        />
+
+    <ImageButton
+        android:id="@+id/magnet"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:src="@drawable/magnet"
+        android:background="@color/whiteColor"
+        android:onClick="onClickMagnet"
+        android:text="Magentic" />
+
+    <ImageButton
+        android:onClick="onClickCompass"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_margin="6dp"
+        android:id="@+id/compassView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/compas_icon"
+        android:text="Compass"
+        android:background="@color/whiteColor"
+         />
+
+        <ImageButton
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="6dp"
+            android:layout_rowWeight="1"
+            android:background="@color/whiteColor"
+            android:onClick="onClickLocation"
+            android:src="@drawable/gps"
+            android:text="New" />
+
+</GridLayout>
+</LinearLayout>
